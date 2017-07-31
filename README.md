@@ -11,6 +11,11 @@ Axway JavaScript coding standards shareable config for [eslint](http://eslint.or
   * [Default Configuration with Gulp](#default-configuration-with-gulp)
   * [Custom `.eslintrc` Configurations with Gulp](#custom-eslintrc-configurations-with-gulp)
   * [Custom eslint Configurations for Source and Tests](#custom-eslint-configurations-for-source-and-tests)
+* [Usage with Titanium](#usage-with-titanium)
+  * [Classic Titanium Apps](#classic-titanium-apps)
+  * [Alloy Apps](#alloy-apps)
+  * [Custom `.eslintrc` for Titanium Apps](#custom-eslintrc-for-titanium-apps)
+  * [Running `eslint` for Titanium Apps](#running-eslint-for-titanium-apps)
 
 ## Installation
 
@@ -29,8 +34,9 @@ Determine which environment you wish to target. Choose __ONE__:
 | Target Environment   | Description                                   |
 | :------------------- | :-------------------------------------------- |
 | `axway`              | General JavaScript (ES6, ES2016, and ES2017)  |
-| `axway/env-node`     | Node.js support (extends `axway`)             |
 | `axway/env-browser`  | Web browser support (extends `axway`)         |
+| `axway/env-node`     | Node.js support (extends `axway`)             |
+| `axway/env-titanium` | Titanium and Alloy support (extends `axway`)  |
 
 > NOTE: The default `axway` configuration automatically includes the
 > [`eslint-plugin-import`](https://www.npmjs.com/package/eslint-plugin-import) and
@@ -54,10 +60,11 @@ Select additional configurations. These require you to add dependencies to your 
 
 ### Step 3
 
-Select a task runner:
+Determine how you are going to run `eslint`:
 
 * npm scripts ([docs](https://docs.npmjs.com/misc/scripts))
 * gulp.js ([docs](https://gulpjs.com/))
+* Manually run `eslint` like it's 1999
 
 ### Step 4 (optional)
 
@@ -273,6 +280,73 @@ gulp.task('lint-test', () => {
 		.pipe(eslint.format())
 		.pipe(eslint.failAfterError());
 });
+```
+
+## Usage with Titanium
+
+For Titanium apps, you can use npm, gulp, or just manually invoke `eslint`. For this guide, we'll
+cover using npm.
+
+Start by creating a `package.json` manually or run:
+
+```
+$ npm init
+```
+
+Next install the dev dependencies:
+
+```
+$ npm install --save-dev eslint eslint-config-axway
+```
+
+### Classic Titanium Apps:
+
+Add the following `lint` script to the `package.json`:
+
+```json
+{
+	"scripts": {
+		"lint": "eslint --config axway/env-titanium Resources"
+	}
+}
+```
+
+### Alloy Apps:
+
+Add the following `lint` script to the `package.json`:
+
+```json
+{
+	"scripts": {
+		"lint": "eslint --config axway/env-titanium app"
+	}
+}
+```
+
+### Custom `.eslintrc` for Titanium Apps
+
+Due to Alloy's code generation, you will most certainly need to create a custom `.eslintrc` to
+declare all the global variables. Being by creating an `.eslintrc` file in the root of your project
+and have it extend the `axway/env-titanium` configuration.
+
+```js
+{
+	"extends": "axway/env-titanium",
+	"globals": {
+		// declare globals here...
+	},
+	"rules": {
+		// project specific overrides...
+	}
+}
+```
+
+### Running `eslint` for Titanium Apps
+
+You can simply run `eslint` by running:
+
+```
+$ npm run lint
 ```
 
 ## License
