@@ -1,0 +1,45 @@
+{
+	"name": "eslint-config-axway",
+	"version": "2.0.0",
+	"description": "Shareable eslint config for Axway projects",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/appcelerator/eslint-config-axway.git"
+	},
+	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
+	"author": "Axway, Inc.",
+	"maintainers": [
+		{
+			"name": "Chris Barber",
+			"email": "cbarber@axway.com"
+		}
+	],
+	"keywords": [
+		"appcelerator",
+		"axway",
+		"config",
+		"eslint",
+		"eslintconfig",
+		"eslint-config",
+		"javascript",
+		"jscs",
+		"jshint",
+		"lint",
+		"linter",
+		"linting",
+		"styleguide"
+	],
+	"main": "./index.js",
+	"devDependencies": {
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-security": "^1.4.0"
+	},
+	"peerDependencies": {
+		"babel-eslint": ">=7",
+		"eslint": ">=4",
+		"eslint-plugin-jsx-a11y": ">=6",
+		"eslint-plugin-mocha": ">=4",
+		"eslint-plugin-react": ">=7"
+	}
+}
