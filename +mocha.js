@@ -39,6 +39,7 @@ module.exports = {
 		'mocha'
 	],
 	'rules': {
+		// mocha rules
 		'mocha/handle-done-callback': 'error',
 		'mocha/no-exclusive-tests': 'warn',
 		'mocha/no-identical-title': 'error',

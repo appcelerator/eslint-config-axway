@@ -63,6 +63,7 @@ module.exports = {
 		'no-confusing-arrow':            'error',
 		'no-console':                    'off',
 		'no-constant-condition':         'off',
+		'no-debugger':                   'warn',
 		'no-div-regex':                  'error',
 		'no-duplicate-imports':          'error',
 		'no-empty':                      'warn',
