@@ -16,10 +16,7 @@ module.exports = {
 	],
 	'parserOptions': {
 		'ecmaVersion': 2017,
-		'sourceType': 'module',
-		'ecmaFeatures': {
-			'experimentalObjectRestSpread': true
-		}
+		'sourceType': 'module'
 	},
 	'plugins': [
 		'import',  // https://www.npmjs.com/package/eslint-plugin-import
