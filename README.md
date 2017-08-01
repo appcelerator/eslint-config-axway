@@ -62,8 +62,8 @@ Select additional configurations. These require you to add dependencies to your 
 
 Determine how you are going to run `eslint`:
 
-* npm scripts ([docs](https://docs.npmjs.com/misc/scripts))
-* gulp.js ([docs](https://gulpjs.com/))
+* [npm scripts](#usage-with-npm-scripts) ([docs](https://docs.npmjs.com/misc/scripts))
+* [gulp.js](#usage-with-gulp) ([docs](https://gulpjs.com/))
 * Manually run `eslint` like it's 1999
 
 ### Step 4 (optional)
