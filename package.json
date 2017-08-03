@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Shareable eslint config for Axway projects",
 	"license": "Apache-2.0",
 	"repository": {
@@ -31,7 +31,7 @@
 		"styleguide"
 	],
 	"main": "./index.js",
-	"devDependencies": {
+	"dependencies": {
 		"eslint-plugin-import": "^2.7.0",
 		"eslint-plugin-security": "^1.4.0"
 	},
