@@ -25,7 +25,7 @@ module.exports = {
 	'rules': {
 		// eslint recommended overrides
 		'accessor-pairs':                'error',
-		'array-bracket-spacing':         [ 'error', 'always', { 'objectsInArrays': false, 'arraysInArrays': false } ],
+		'array-bracket-spacing':         [ 'error', 'always' ],
 		'array-callback-return':         'error',
 		'arrow-parens':                  'off',
 		'arrow-spacing':                 [ 'error', { 'after': true, 'before': true } ],
