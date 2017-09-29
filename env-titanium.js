@@ -14,7 +14,9 @@ module.exports = {
 		'clearTimeout': false,
 		'clearInterval': false,
 		'setTimeout': false,
-		'setInterval': false
+		'setInterval': false,
+		'exports': false,
+		'module', false
 	},
 	'rules': {
 		'no-alert': 'off'
