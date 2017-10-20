@@ -128,7 +128,7 @@ module.exports = {
 		'spaced-comment':                'error',
 		'template-curly-spacing':        'error',
 		'valid-jsdoc':                   [ 'warn', { 'requireReturn': false, 'requireReturnDescription': false } ],
-		'vars-on-top':                   'warn',
+		'vars-on-top':                   'off',
 		'wrap-iife':                     'error',
 		'yield-star-spacing':            'error',
 		'yoda':                          'error',
