@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description": "Shareable eslint config for Axway projects",
 	"license": "Apache-2.0",
 	"repository": {
