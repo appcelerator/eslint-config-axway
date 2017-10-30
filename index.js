@@ -118,6 +118,7 @@ module.exports = {
 		'operator-linebreak':            [ 'warn', 'before' ],
 		'prefer-reflect':                [ 'off', { 'exceptions': [ 'call' ] } ],
 		'quotes':                        [ 'error', 'single' ],
+		'quote-props':                   [ 'error', 'as-needed' ],
 		'semi':                          [ 'error', 'always' ],
 		'semi-spacing':                  'error',
 		'space-before-blocks':           [ 'error', 'always' ],
