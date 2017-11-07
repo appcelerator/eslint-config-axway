@@ -227,6 +227,46 @@ gulp.task('lint', () => {
 });
 ```
 
+### Custom `.eslintrc` with a `eslint-config-axway`
+
+Due to the way eslint works, you cannot specify a `configFile` and an `.eslintrc` file, so you have
+to do it the hard way.
+
+```js
+const eslint = require('gulp-eslint');
+const fs = require('fs');
+const path = require('path');
+
+gulp.task('lint', () => {
+	const baseConfig = require('eslint-config-axway');
+
+	// check if the user has a custom .eslintrc in the root of the project
+	let custom = path.join(process.cwd(), '.eslintrc');
+	if (fs.existsSync(custom)) {
+		(function merge(dest, src) {
+			for (const key of Object.keys(src)) {
+				if (src[key] && typeof src[key] === 'object' && !Array.isArray(src[key])) {
+					if (!dest[key] || typeof dest[key] !== 'object' || Array.isArray(dest[key])) {
+						dest[key] = {};
+					}
+					merge(dest[key], src[key]);
+				} else {
+					dest[key] = src[key];
+				}
+			}
+		}(baseConfig, JSON.parse(fs.readFileSync(custom))));
+	}
+
+	return gulp.src([
+			'src/**/*.js',
+			'test/**/test-*.js'
+		])
+		.pipe(eslint({ baseConfig }))
+		.pipe(eslint.format())
+		.pipe(eslint.failAfterError());
+});
+```
+
 ### Custom eslint Configurations for Source and Tests
 
 Create an `.eslintrc` file in the root of your project to be used for your source code that extends
