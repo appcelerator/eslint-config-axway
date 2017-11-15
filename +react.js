@@ -1,3 +1,8 @@
+/* eslint-disable quote-props */
+var verifyPeer = require('./verifyPeerDependency');
+verifyPeer('eslint-plugin-react');
+verifyPeer('eslint-plugin-jsx-a11y');
+
 module.exports = {
 	plugins: [
 		'jsx-a11y',
@@ -15,8 +20,8 @@ module.exports = {
 
 		// react rules
 		'react/forbid-prop-types': 'off',
-		'react/jsx-indent-props': ['warn', 'tab'],
-		'react/jsx-indent': ['warn', 'tab'],
+		'react/jsx-indent-props': [ 'warn', 'tab' ],
+		'react/jsx-indent': [ 'warn', 'tab' ],
 		'react/jsx-uses-react': 'error',
 		'react/jsx-uses-vars': 'error',
 		'react/no-array-index-key': 'off',

@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable quote-props */
 
 /**
  * eslint's plugin loader does not allow absolute paths for plugins, only plugin names, so we need
@@ -122,7 +123,7 @@ module.exports = {
 		'semi':                          [ 'error', 'always' ],
 		'semi-spacing':                  'error',
 		'space-before-blocks':           [ 'error', 'always' ],
-		'space-before-function-paren':   [ 'error', { 'anonymous': 'always', 'named': 'ignore', 'asyncArrow': 'always' }],
+		'space-before-function-paren':   [ 'error', { 'anonymous': 'always', 'named': 'ignore', 'asyncArrow': 'always' } ],
 		'space-in-parens':               [ 'error', 'never' ],
 		'space-infix-ops':               'error',
 		'space-unary-ops':               [ 'error', { 'nonwords': false, 'overrides': {} } ],
