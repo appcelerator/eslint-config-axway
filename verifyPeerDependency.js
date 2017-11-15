@@ -29,7 +29,7 @@ module.exports = function verifyPeerDependency(dependency, shouldThrow) {
 	try {
 		dependencyPath = require.resolve(dependency);
 	} catch (e) {
-		return error(packageJSON.name + ' requires a dependency of ' + dependency + '@' + range + ' but none was installed.', shouldThrow);
+		return error(packageJSON.name + ' requires a peer of ' + dependency + '@' + range + ' but none was installed.', shouldThrow);
 	}
 	// Find the closest package.json so that we can get the installed version of the dependency
 	var root = findRoot(dependencyPath);
@@ -43,6 +43,6 @@ module.exports = function verifyPeerDependency(dependency, shouldThrow) {
 
 	// Check dependency version satisfies the required range
 	if (!semver.satisfies(dependencyPackage.version, range)) {
-		return error(packageJSON.name + ' requires a dependency of ' + dependency + '@' + range + ' but none was installed.', shouldThrow);
+		return error(packageJSON.name + ' requires a peer of ' + dependency + '@' + range + ' but none was installed.', shouldThrow);
 	}
 };
