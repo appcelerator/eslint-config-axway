@@ -100,6 +100,7 @@ module.exports = {
 		'no-sequences':                  'error',
 		'no-shadow-restricted-names':    'error',
 		'no-spaced-func':                'error',
+		'no-template-curly-in-string':   'error',
 		'no-throw-literal':              'error',
 		'no-trailing-spaces':            'error',
 		'no-undef-init':                 'error',
