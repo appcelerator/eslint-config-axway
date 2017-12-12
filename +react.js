@@ -15,8 +15,8 @@ module.exports = {
 
 		// react rules
 		'react/forbid-prop-types': 'off',
-		'react/jsx-indent-props': ['warn', 'tab'],
-		'react/jsx-indent': ['warn', 'tab'],
+		'react/jsx-indent-props': [ 'warn', 'tab' ],
+		'react/jsx-indent': [ 'warn', 'tab' ],
 		'react/jsx-uses-react': 'error',
 		'react/jsx-uses-vars': 'error',
 		'react/no-array-index-key': 'off',
