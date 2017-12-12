@@ -1,55 +1,55 @@
 {
-  "name": "eslint-config-axway",
-  "version": "2.0.6",
-  "description": "Shareable eslint config for Axway projects",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/appcelerator/eslint-config-axway.git"
-  },
-  "homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
-  "author": "Axway, Inc.",
-  "maintainers": [
-    {
-      "name": "Chris Barber",
-      "email": "cbarber@axway.com"
-    }
-  ],
-  "keywords": [
-    "appcelerator",
-    "axway",
-    "config",
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "javascript",
-    "jscs",
-    "jshint",
-    "lint",
-    "linter",
-    "linting",
-    "styleguide"
-  ],
-  "main": "./index.js",
-  "dependencies": {
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-security": "^1.4.0",
-    "find-root": "^1.1.0",
-    "semver": "^5.4.1"
-  },
-  "optionalPeerDependencies": {
-    "babel-eslint": "7.x || 8.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-mocha": "4.x",
-    "eslint-plugin-react": "7.x"
-  },
-  "peerDependencies": {
-    "eslint": "4.x"
-  },
-  "devDependencies": {
-    "eslint": "4.x"
-  },
-  "scripts": {
-    "lint": "eslint ."
-  }
+	"name": "eslint-config-axway",
+	"version": "2.0.7",
+	"description": "Shareable eslint config for Axway projects",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/appcelerator/eslint-config-axway.git"
+	},
+	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
+	"author": "Axway, Inc.",
+	"maintainers": [
+		{
+			"name": "Chris Barber",
+			"email": "cbarber@axway.com"
+		}
+	],
+	"keywords": [
+		"appcelerator",
+		"axway",
+		"config",
+		"eslint",
+		"eslintconfig",
+		"eslint-config",
+		"javascript",
+		"jscs",
+		"jshint",
+		"lint",
+		"linter",
+		"linting",
+		"styleguide"
+	],
+	"main": "./index.js",
+	"dependencies": {
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-security": "^1.4.0",
+		"find-root": "^1.1.0",
+		"semver": "^5.4.1"
+	},
+	"optionalPeerDependencies": {
+		"babel-eslint": "7.x || 8.x",
+		"eslint-plugin-jsx-a11y": "6.x",
+		"eslint-plugin-mocha": "4.x",
+		"eslint-plugin-react": "7.x"
+	},
+	"peerDependencies": {
+		"eslint": "4.x"
+	},
+	"devDependencies": {
+		"eslint": "4.x"
+	},
+	"scripts": {
+		"lint": "eslint ."
+	}
 }
