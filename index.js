@@ -47,6 +47,7 @@ module.exports = {
 		'id-match':                      'error',
 		'indent':                        [ 'error', 'tab', { 'SwitchCase': 1 } ],
 		'jsx-quotes':                    'error',
+		'key-spacing':                   [ 'error', { 'beforeColon': false } ],
 		'keyword-spacing':               [ 'error', { 'overrides': {} } ],
 		'linebreak-style':               [ 'error', 'unix' ],
 		'lines-around-comment':          [ 'error', { 'beforeBlockComment': false } ],
