@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable quote-props */
 
 /**
  * eslint's plugin loader does not allow absolute paths for plugins, only plugin names, so we need

@@ -33,14 +33,24 @@
 	"main": "./index.js",
 	"dependencies": {
 		"eslint-plugin-import": "^2.8.0",
-		"eslint-plugin-security": "^1.4.0"
+		"eslint-plugin-security": "^1.4.0",
+		"find-root": "^1.1.0",
+		"semver": "^5.4.1"
 	},
-	"peerDependencies": {
+	"optionalPeerDependencies": {
 		"babel-eslint": "7.x || 8.x",
-		"eslint": "4.x",
 		"eslint-plugin-chai-friendly": "^0.4.1",
 		"eslint-plugin-jsx-a11y": "6.x",
 		"eslint-plugin-mocha": "4.x",
 		"eslint-plugin-react": "7.x"
+	},
+	"peerDependencies": {
+		"eslint": "4.x"
+	},
+	"devDependencies": {
+		"eslint": "4.x"
+	},
+	"scripts": {
+		"lint": "eslint ."
 	}
 }

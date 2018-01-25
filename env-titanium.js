@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 module.exports = {
 	'extends': './index.js',
 	'globals': {

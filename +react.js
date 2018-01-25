@@ -1,3 +1,8 @@
+/* eslint-disable quote-props */
+var verifyPeer = require('./verifyPeerDependency');
+verifyPeer('eslint-plugin-react');
+verifyPeer('eslint-plugin-jsx-a11y');
+
 module.exports = {
 	plugins: [
 		'jsx-a11y',
