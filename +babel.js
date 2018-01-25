@@ -1,6 +1,6 @@
 'use strict';
 /* eslint-disable quote-props */
-var verifyPeer = require('./verifyPeerDependency');
+var verifyPeer = require('./verify-peer-dependency');
 verifyPeer('babel-eslint');
 
 module.exports = {

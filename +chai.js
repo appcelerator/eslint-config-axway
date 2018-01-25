@@ -1,3 +1,8 @@
+'use strict';
+/* eslint-disable quote-props */
+var verifyPeer = require('./verify-peer-dependency');
+verifyPeer('eslint-plugin-chai-friendly');
+
 module.exports = {
 	'plugins': [
 		'chai-friendly'

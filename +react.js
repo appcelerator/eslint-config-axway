@@ -1,5 +1,5 @@
 /* eslint-disable quote-props */
-var verifyPeer = require('./verifyPeerDependency');
+var verifyPeer = require('./verify-peer-dependency');
 verifyPeer('eslint-plugin-react');
 verifyPeer('eslint-plugin-jsx-a11y');
 
