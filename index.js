@@ -26,7 +26,7 @@ module.exports = {
 	'rules': {
 		// eslint recommended overrides
 		'accessor-pairs':                'error',
-		'array-bracket-spacing':         [ 'error', 'always' ],
+		'array-bracket-spacing':         [ 'error', 'always' { 'objectsInArrays': false, 'arraysInArrays': false } ],
 		'array-callback-return':         'error',
 		'arrow-parens':                  'off',
 		'arrow-spacing':                 [ 'error', { 'after': true, 'before': true } ],
@@ -48,6 +48,7 @@ module.exports = {
 		'id-match':                      'error',
 		'indent':                        [ 'error', 'tab', { 'SwitchCase': 1 } ],
 		'jsx-quotes':                    'error',
+		'key-spacing':                   [ 'error', { 'beforeColon': false, 'mode': 'minimum' } ],
 		'keyword-spacing':               [ 'error', { 'overrides': {} } ],
 		'linebreak-style':               [ 'error', 'unix' ],
 		'lines-around-comment':          [ 'error', { 'beforeBlockComment': false } ],
@@ -74,6 +75,7 @@ module.exports = {
 		'no-extra-label':                'error',
 		'no-fallthrough':                'off',
 		'no-floating-decimal':           'error',
+		'no-global-assign':              'error',
 		'no-implicit-globals':           'error',
 		'no-implied-eval':               'error',
 		'no-inner-declarations':         'off',
@@ -85,7 +87,6 @@ module.exports = {
 		'no-loop-func':                  'error',
 		'no-multi-str':                  'error',
 		'no-multiple-empty-lines':       [ 'error', { 'max': 1 } ],
-		'no-native-reassign':            'error',
 		'no-new-func':                   'error',
 		'no-new-object':                 'error',
 		'no-new-require':                'error',
