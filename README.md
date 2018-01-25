@@ -53,6 +53,7 @@ Select additional configurations. These require you to add dependencies to your 
 | `axway/+babel` | Support for future specs  | `babel-eslint`                                 |
 | `axway/+mocha` | Mocha unit test rules     | `eslint-plugin-mocha`                          |
 | `axway/+react` | React.js and .jsx support | `eslint-plugin-react` `eslint-plugin-jsx-a11y` |
+| `axway/+chai`  | Chai support              | `eslint-plugin-chai-friendly`                  |
 
 > NOTE: You must use a `.eslintrc` file to specify multiple configurations. Set the
 > [extends](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) property to
@@ -147,7 +148,7 @@ You will probably also want a test-specific configuration. Create an `.eslintrc`
 
 ```js
 {
-	"extends": [ "axway/env-node", "axway/+mocha" ],
+	"extends": [ "axway/env-node", "axway/+mocha", "axway/+chai" ],
 	"globals": {
 		// declare globals here...
 	},
