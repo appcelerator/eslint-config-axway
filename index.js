@@ -23,6 +23,17 @@ module.exports = {
 		'import',  // https://www.npmjs.com/package/eslint-plugin-import
 		'security' // https://www.npmjs.com/package/eslint-plugin-security
 	],
+	'settings': {
+		'import/resolver': {
+			'node': {
+				'extensions': [ '.js', '.json' ]
+			}
+		},
+		'import/extensions': [
+			'.js',
+			'.jsx',
+		],
+	},
 	'rules': {
 		// eslint recommended overrides
 		'accessor-pairs':                'error',
@@ -138,12 +149,46 @@ module.exports = {
 		'yoda':                          'error',
 
 		// import rules
-		'import/extensions':                 'off',
-		'import/no-dynamic-require':         'off',
-		'import/no-extraneous-dependencies': 'off',
-		'import/no-named-as-default':        'off',
-		'import/no-webpack-loader-syntax':   'off',
-		'import/prefer-default-export':      'off',
+
+		// Static analysis:
+		'import/no-unresolved': [ 'error', { commonjs: true, caseSensitive: true }],
+		'import/named': 'error',
+		'import/default': 'off',
+		'import/namespace': 'off',
+
+		// Helpful warnings:
+		'import/export': 'error',
+		'import/no-named-as-default-member': 'error',
+		'import/no-deprecated': 'off',
+		'import/no-mutable-exports': 'error',
+
+		// Style guide:
+		'import/first': [ 'error', 'absolute-first' ],
+		'import/imports-first': 'off',
+		'import/no-duplicates': 'error',
+		'import/no-namespace': 'off',
+		'import/order': [ 'off', {
+			groups: [ 'builtin', 'external', 'internal', 'parent', 'sibling', 'index' ],
+			'newlines-between': 'never',
+		}],
+		'import/no-restricted-paths': 'off',
+		'import/max-dependencies': [ 'off', { max: 10 }],
+		'import/no-absolute-path': 'error',
+		'import/no-internal-modules': [ 'off', {
+			allow: [],
+		}],
+		'import/unambiguous': 'off',
+		'import/no-unassigned-import': 'off',
+		'import/no-named-default': 'error',
+		'import/no-anonymous-default-export': [ 'off', {
+			allowArray: false,
+			allowArrowFunction: false,
+			allowAnonymousClass: false,
+			allowAnonymousFunction: false,
+			allowLiteral: false,
+			allowObject: false,
+		}],
+		'import/exports-last': 'off',
 
 		// security rules
 		'security/detect-non-literal-fs-filename': 'off',
