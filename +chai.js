@@ -9,6 +9,6 @@ module.exports = {
 	],
 	'rules': {
 		'no-unused-expressions': 'off',
-		'chai-friendly/no-unused-expressions': ['error', { 'allowShortCircuit': true, 'allowTernary': true }]
+		'chai-friendly/no-unused-expressions': [ 'error', { 'allowShortCircuit': true, 'allowTernary': true }]
 	}
-}
+};
