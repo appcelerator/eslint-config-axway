@@ -151,7 +151,7 @@ module.exports = {
 		// import rules
 
 		// Static analysis:
-		'import/no-unresolved': [ 'error', { commonjs: true, caseSensitive: true } ],
+		'import/no-unresolved': 'off',
 		'import/named': 'error',
 		'import/default': 'off',
 		'import/namespace': 'off',
@@ -160,10 +160,10 @@ module.exports = {
 		'import/export': 'error',
 		'import/no-named-as-default-member': 'error',
 		'import/no-deprecated': 'off',
-		'import/no-mutable-exports': 'error',
+		'import/no-mutable-exports': 'warn',
 
 		// Style guide:
-		'import/first': [ 'error', 'absolute-first' ],
+		'import/first': 'off',
 		'import/imports-first': 'off',
 		'import/no-duplicates': 'error',
 		'import/no-namespace': 'off',
