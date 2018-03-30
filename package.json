@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "2.0.12",
+	"version": "2.0.13",
 	"description": "Shareable eslint config for Axway projects",
 	"license": "Apache-2.0",
 	"repository": {
@@ -41,7 +41,7 @@
 		"babel-eslint": "7.x || 8.x",
 		"eslint-plugin-chai-friendly": "^0.4.1",
 		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "4.x",
+		"eslint-plugin-mocha": "4.x || 5.x",
 		"eslint-plugin-react": "7.x"
 	},
 	"peerDependencies": {

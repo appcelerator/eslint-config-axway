@@ -26,8 +26,22 @@ module.exports = function verifyPeerDependency(dependency, shouldThrow) {
 	}
 	// Try to verify that the dependency is installed.
 	var dependencyPath;
+	var paths = module.paths.slice();
+	var p = process.cwd();
+	var cur, last;
 	try {
-		dependencyPath = require.resolve(dependency);
+		// we need to be a bit more aggressive finding dependencies
+		while (p !== last) {
+			cur = path.join(p, 'node_modules');
+			if (paths.indexOf(cur) === -1) {
+				paths.push(cur);
+			}
+			last = p;
+			p = path.dirname(p);
+		}
+
+		// this only works in Node 8.9+
+		dependencyPath = require.resolve(dependency, { paths: paths });
 	} catch (e) {
 		return error(packageJSON.name + ' requires a peer of ' + dependency + '@' + range + ' but none was installed.', shouldThrow);
 	}
