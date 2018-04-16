@@ -3,10 +3,10 @@ var verifyPeer = require('./verify-peer-dependency');
 verifyPeer('eslint-plugin-alloy');
 
 module.exports = {
-    'extends': './env-titanium.js',
-    'plugins': [
-        'alloy'
-    ],
+	'extends': './env-titanium.js',
+	'plugins': [
+		'alloy'
+	],
 	'globals': {
 		'$': false,
 		'_': false,
@@ -18,7 +18,7 @@ module.exports = {
 		'arguments': false
 	},
 	'rules': {
-        'no-unused-vars': 'off',
-        'alloy/no-unused-vars': "error"
+		'no-unused-vars': 'off',
+		'alloy/no-unused-vars': 'error'
 	}
 };
