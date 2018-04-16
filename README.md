@@ -342,24 +342,57 @@ $ npm install --save-dev eslint eslint-config-axway
 
 ### Classic Titanium Apps:
 
+Create an .eslintrc file alongisde your `tiapp.xml` file.
+
+```js
+{
+	"extends": [ "axway/env-titanium" ],
+	"globals": {
+		// declare globals here...
+	},
+	"rules": {
+		// project specific overrides...
+	}
+}
+```
+
 Add the following `lint` script to the `package.json`:
 
 ```json
 {
 	"scripts": {
-		"lint": "eslint --config axway/env-titanium Resources"
+		"lint": "eslint Resources"
 	}
 }
 ```
 
 ### Alloy Apps:
 
+Install eslint-plugin-alloy.
+
+```
+$ npm install --save-dev eslint-plugin-alloy
+```
+
+Create an .eslintrc file alongisde your `tiapp.xml` file
+```js
+{
+	"extends": [ "axway/env-alloy" ],
+	"globals": {
+		// declare globals here...
+	},
+	"rules": {
+		// project specific overrides...
+	}
+}
+```
+
 Add the following `lint` script to the `package.json`:
 
 ```json
 {
 	"scripts": {
-		"lint": "eslint --config axway/env-titanium app"
+		"lint": "eslint app"
 	}
 }
 ```
