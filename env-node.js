@@ -4,9 +4,7 @@ module.exports = {
 		'node': true
 	},
 	'parserOptions': {
-		'ecmaFeatures': {
-			'experimentalObjectRestSpread': true
-		}
+		'ecmaVersion': 9
 	},
 	'extends': './index.js'
 };
