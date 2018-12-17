@@ -20,8 +20,10 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
-		'import',  // https://www.npmjs.com/package/eslint-plugin-import
-		'security' // https://www.npmjs.com/package/eslint-plugin-security
+		'chai-expect', // https://www.npmjs.com/package/eslint-plugin-chai-expect
+		'import',      // https://www.npmjs.com/package/eslint-plugin-import
+		'promise',     // https://www.npmjs.com/package/eslint-plugin-promise
+		'security'     // https://www.npmjs.com/package/eslint-plugin-security
 	],
 	'settings': {
 		'import/resolver': {
@@ -193,7 +195,25 @@ module.exports = {
 		// security rules
 		'security/detect-non-literal-fs-filename': 'off',
 		'security/detect-object-injection':        'off',
-		'security/detect-unsafe-regex':            'off'
+		'security/detect-unsafe-regex':            'off',
+
+		// chai rules
+		'chai-expect/missing-assertion': 'error',
+		'chai-expect/terminating-properties': 'warn',
+
+		// promise rules
+		'promise/always-return': 'error',
+		'promise/avoid-new': 'off',
+		'promise/catch-or-return': 'error',
+		'promise/no-callback-in-promise': 'warn',
+		'promise/no-native': 'off',
+		'promise/no-nesting': 'warn',
+		'promise/no-new-statics': 'error',
+		'promise/no-promise-in-callback': 'warn',
+		'promise/no-return-in-finally': 'warn',
+		'promise/no-return-wrap': 'error',
+		'promise/param-names': 'error',
+		'promise/valid-params': 'warn'
 	}
 };
 
