@@ -20,7 +20,6 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
-		'chai-expect', // https://www.npmjs.com/package/eslint-plugin-chai-expect
 		'import',      // https://www.npmjs.com/package/eslint-plugin-import
 		'promise',     // https://www.npmjs.com/package/eslint-plugin-promise
 		'security'     // https://www.npmjs.com/package/eslint-plugin-security
@@ -197,22 +196,18 @@ module.exports = {
 		'security/detect-object-injection':        'off',
 		'security/detect-unsafe-regex':            'off',
 
-		// chai rules
-		'chai-expect/missing-assertion': 'error',
-		'chai-expect/terminating-properties': 'warn',
-
 		// promise rules
-		'promise/always-return': 'error',
+		'promise/always-return': 'warn', // TODO: Bump to error in next major
 		'promise/avoid-new': 'off',
-		'promise/catch-or-return': 'error',
+		'promise/catch-or-return': 'warn', // TODO: Bump to error in next major
 		'promise/no-callback-in-promise': 'warn',
 		'promise/no-native': 'off',
 		'promise/no-nesting': 'warn',
-		'promise/no-new-statics': 'error',
+		'promise/no-new-statics': 'warn', // TODO: Bump to error in next major
 		'promise/no-promise-in-callback': 'warn',
 		'promise/no-return-in-finally': 'warn',
-		'promise/no-return-wrap': 'error',
-		'promise/param-names': 'error',
+		'promise/no-return-wrap': 'warn', // TODO: Bump to error in next major
+		'promise/param-names': 'warn', // TODO: Bump to error in next major
 		'promise/valid-params': 'warn'
 	}
 };
