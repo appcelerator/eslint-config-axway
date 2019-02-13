@@ -121,7 +121,7 @@ module.exports = {
 		'no-unmodified-loop-condition':  'error',
 		'no-unneeded-ternary':           'error',
 		'no-unused-expressions':         [ 'warn', { 'allowShortCircuit': true, 'allowTernary': true } ],
-		'no-unused-vars':                'warn',
+		'no-unused-vars':                [ 'warn', { 'argsIgnorePattern': '^_.+' } ],
 		'no-useless-concat':             'error',
 		'no-useless-constructor':        'error',
 		'no-void':                       'error',
