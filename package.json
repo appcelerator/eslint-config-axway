@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "4.2.1",
+	"version": "4.2.2",
 	"description": "Shareable eslint config for Axway projects",
 	"license": "Apache-2.0",
 	"repository": {
@@ -33,7 +33,7 @@
 	"main": "./index.js",
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^2.0.1",
-		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-import": "^2.16.0",
 		"eslint-plugin-promise": "^4.0.1",
 		"eslint-plugin-security": "^1.4.0",
 		"find-root": "^1.1.0",
@@ -51,7 +51,7 @@
 		"eslint": "5.x"
 	},
 	"devDependencies": {
-		"eslint": "^5.9.0"
+		"eslint": "^5.13.0"
 	},
 	"scripts": {
 		"lint": "eslint ."
