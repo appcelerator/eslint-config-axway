@@ -11,7 +11,6 @@ module.exports = {
 	],
 	'extends': './index.js',
 	'rules': {
-		'node/file-extension-in-import': 'warn',
 		'node/no-deprecated-api': 'warn',
 		'node/no-unpublished-bin': 'warn',
 		'node/no-unsupported-features/es-builtins': 'warn', // TODO: Error in 5.0.0
