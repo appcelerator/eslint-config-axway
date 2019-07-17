@@ -6,8 +6,6 @@ verifyPeer('babel-eslint');
 module.exports = {
 	'parser': 'babel-eslint',
 	'parserOptions': {
-		'ecmaFeatures': {
-			'experimentalObjectRestSpread': true
-		}
+		'ecmaVersion': 2018
 	}
 };
