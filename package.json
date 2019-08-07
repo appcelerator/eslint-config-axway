@@ -41,6 +41,8 @@
 		"semver": "^6.3.0"
 	},
 	"optionalPeerDependencies": {
+		"@typescript-eslint/parser": "1.x",
+		"@typescript-eslint/eslint-plugin": "1.x",
 		"babel-eslint": "7.x || 8.x || 9.x || 10.x",
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "^0.4.1",
