@@ -48,12 +48,13 @@ Determine which environment you wish to target. Choose __ONE__:
 Select additional configurations. These require you to add dependencies to your project:
 `npm i --save-dev <additional deps>`.
 
-| Addon          | Description               | Additional Dependencies                        |
-| :------------- | :------------------------ | :--------------------------------------------- |
-| `axway/+babel` | Support for future specs  | `babel-eslint`                                 |
-| `axway/+mocha` | Mocha unit test rules     | `eslint-plugin-mocha`                          |
-| `axway/+react` | React.js and .jsx support | `eslint-plugin-react` `eslint-plugin-jsx-a11y` |
-| `axway/+chai`  | Chai support              | `eslint-plugin-chai-friendly`                  |
+| Addon               | Description               | Additional Dependencies                                        |
+| :------------------ | :------------------------ | :------------------------------------------------------------- |
+| `axway/+babel`      | Support for future specs  | `babel-eslint`                                                 |
+| `axway/+mocha`      | Mocha unit test rules     | `eslint-plugin-mocha`                                          |
+| `axway/+react`      | React.js and .jsx support | `eslint-plugin-react` `eslint-plugin-jsx-a11y`                 |
+| `axway/+chai`       | Chai support              | `eslint-plugin-chai-friendly`                                  |
+| `axway/+typescript` | TypeScript support        | `@typescript-eslint/parser` `@typescript-eslint/eslint-plugin` |
 
 > NOTE: You must use a `.eslintrc` file to specify multiple configurations. Set the
 > [extends](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) property to
