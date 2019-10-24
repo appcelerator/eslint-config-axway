@@ -52,7 +52,7 @@
 		"eslint": "5.x || 6.x"
 	},
 	"devDependencies": {
-		"eslint": "^6.0.1"
+		"eslint": "^6.5.1"
 	},
 	"scripts": {
 		"lint": "eslint .",
