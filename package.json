@@ -55,6 +55,7 @@
 		"eslint": "^6.0.1"
 	},
 	"scripts": {
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"test": "npm run lint"
 	}
 }
