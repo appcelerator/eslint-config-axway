@@ -1,4 +1,3 @@
-  
 #!groovy
 library 'pipeline-library'
 
