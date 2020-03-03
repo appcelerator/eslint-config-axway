@@ -98,7 +98,7 @@ module.exports = {
 		'no-lonely-if':                  'error',
 		'no-loop-func':                  'error',
 		'no-multi-str':                  'error',
-		'no-multiple-empty-lines':       [ 'error', { 'max': 1 } ],
+		'no-multiple-empty-lines':       [ 'error', { 'max': 1, 'maxBOF': 0 } ],
 		'no-new-func':                   'error',
 		'no-new-object':                 'error',
 		'no-new-require':                'error',
