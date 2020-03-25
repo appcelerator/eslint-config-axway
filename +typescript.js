@@ -18,5 +18,7 @@ module.exports = {
 	rules: {
 		indent: 'off',
 		'@typescript-eslint/indent': [ 'error', 'tab', { SwitchCase: 1 } ],
+		'no-useless-constructor': 'off',
+		'@typescript-eslint/no-useless-constructor': 'error'
 	}
 };
