@@ -65,7 +65,7 @@ module.exports = {
 		'linebreak-style':               [ 'error', 'unix' ],
 		'lines-around-comment':          [ 'error', { 'beforeBlockComment': false } ],
 		'max-depth':                     [ 'warn', 5 ],
-		'max-len':                       [ 'error', 200, { 'ignoreStrings': true, 'ignoreTrailingComments': true } ],
+		'max-len':                       [ 'error', 200, { 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreTrailingComments': true } ],
 		'max-nested-callbacks':          'error',
 		'max-statements-per-line':       'error',
 		'new-parens':                    'error',
