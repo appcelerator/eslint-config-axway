@@ -32,13 +32,13 @@
 	],
 	"main": "./index.js",
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^2.0.1",
-		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-chai-expect": "^2.1.0",
+		"eslint-plugin-import": "^2.20.2",
 		"eslint-plugin-node": "^10.0.0",
 		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-security": "^1.4.0",
 		"find-root": "^1.1.0",
-		"semver": "^6.3.0"
+		"semver": "^7.3.2"
 	},
 	"optionalPeerDependencies": {
 		"@typescript-eslint/parser": "1.x || 2.x",
@@ -54,7 +54,7 @@
 		"eslint": "5.x || 6.x || 7.x"
 	},
 	"devDependencies": {
-		"eslint": "^6.5.1"
+		"eslint": "^7.0.0"
 	},
 	"scripts": {
 		"lint": "eslint .",
