@@ -47,7 +47,7 @@
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "0.x",
 		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "4.x || 5.x || 6.x || 7.x",
+		"eslint-plugin-mocha": "4.x || 5.x || 6.x || 7.x || 8.x",
 		"eslint-plugin-react": "7.x"
 	},
 	"peerDependencies": {
