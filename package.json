@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "4.7.2",
+	"version": "4.7.3",
 	"description": "Shareable eslint config for Axway projects",
 	"license": "Apache-2.0",
 	"repository": {
@@ -41,8 +41,8 @@
 		"semver": "^7.3.2"
 	},
 	"optionalPeerDependencies": {
-		"@typescript-eslint/parser": "1.x || 2.x || 3.x",
-		"@typescript-eslint/eslint-plugin": "1.x || 2.x || 3.x",
+		"@typescript-eslint/parser": "1.x || 2.x || 3.x || 4.x",
+		"@typescript-eslint/eslint-plugin": "1.x || 2.x || 3.x || 4.x",
 		"babel-eslint": "7.x || 8.x || 9.x || 10.x",
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "0.x",
