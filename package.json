@@ -32,18 +32,18 @@
 	],
 	"main": "./index.js",
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^2.1.0",
-		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-chai-expect": "^2.2.0",
+		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-promise": "^4.3.1",
 		"eslint-plugin-security": "^1.4.0",
 		"find-root": "^1.1.0",
-		"semver": "^7.3.2"
+		"semver": "^7.3.4"
 	},
 	"optionalPeerDependencies": {
+		"@babel/eslint-parser": "7.x",
 		"@typescript-eslint/parser": "1.x || 2.x || 3.x || 4.x",
 		"@typescript-eslint/eslint-plugin": "1.x || 2.x || 3.x || 4.x",
-		"babel-eslint": "7.x || 8.x || 9.x || 10.x",
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "0.x",
 		"eslint-plugin-jsx-a11y": "6.x",
