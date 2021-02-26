@@ -42,6 +42,7 @@
 	},
 	"optionalPeerDependencies": {
 		"@babel/eslint-parser": "7.x",
+		"@babel/eslint-plugin": "7.x",
 		"@typescript-eslint/parser": "1.x || 2.x || 3.x || 4.x",
 		"@typescript-eslint/eslint-plugin": "1.x || 2.x || 3.x || 4.x",
 		"eslint-plugin-alloy": "1.x",
