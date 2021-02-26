@@ -1,11 +1,12 @@
 'use strict';
 /* eslint-disable quote-props */
 var verifyPeer = require('./verify-peer-dependency');
-verifyPeer('babel-eslint');
+verifyPeer('@babel/eslint-parser');
 
 module.exports = {
-	'parser': 'babel-eslint',
+	'parser': '@babel/eslint-parser',
 	'parserOptions': {
-		'ecmaVersion': 2018
+		'ecmaVersion': 2020,
+		'requireConfigFile': false
 	}
 };
