@@ -21,6 +21,7 @@ module.exports = {
 		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'no-unused-expressions': 'off',
-		'@typescript-eslint/no-unused-expressions': 'warn'
+		'@typescript-eslint/no-unused-expressions': 'warn',
+		'@typescript-eslint/no-unused-vars': [ 'warn', { argsIgnorePattern: '^_.+' } ]
 	}
 };
