@@ -1,20 +1,15 @@
 {
 	"name": "eslint-config-axway",
-	"version": "5.0.0",
+	"version": "6.0.0",
 	"description": "Shareable eslint config for Axway projects",
-	"license": "Apache-2.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/appcelerator/eslint-config-axway.git"
-	},
-	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
-	"author": "Axway, Inc.",
+	"main": "./index.js",
+	"author": "Axway, Inc. <npmjs@appcelerator.com>",
 	"maintainers": [
-		{
-			"name": "Chris Barber",
-			"email": "cbarber@axway.com"
-		}
+		"Chris Barber <cbarber@axway.com>"
 	],
+	"license": "Apache-2.0",
+	"repository": "https://github.com/appcelerator/eslint-config-axway",
+	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
 	"keywords": [
 		"appcelerator",
 		"axway",
@@ -30,7 +25,6 @@
 		"linting",
 		"styleguide"
 	],
-	"main": "./index.js",
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^2.2.0",
 		"eslint-plugin-import": "^2.22.1",
@@ -43,16 +37,16 @@
 	"optionalPeerDependencies": {
 		"@babel/eslint-parser": "7.x",
 		"@babel/eslint-plugin": "7.x",
-		"@typescript-eslint/parser": "1.x || 2.x || 3.x || 4.x",
-		"@typescript-eslint/eslint-plugin": "1.x || 2.x || 3.x || 4.x",
+		"@typescript-eslint/parser": "4.x",
+		"@typescript-eslint/eslint-plugin": "4.x",
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "0.x",
 		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "4.x || 5.x || 6.x || 7.x || 8.x",
+		"eslint-plugin-mocha": "8.x",
 		"eslint-plugin-react": "7.x"
 	},
 	"peerDependencies": {
-		"eslint": "5.x || 6.x || 7.x"
+		"eslint": "7.x"
 	},
 	"devDependencies": {
 		"eslint": "^7.0.0"
