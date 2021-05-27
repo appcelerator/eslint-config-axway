@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "6.0.1",
+	"version": "6.0.2",
 	"description": "Shareable eslint config for Axway projects",
 	"main": "./index.js",
 	"author": "Axway, Inc. <npmjs@appcelerator.com>",
