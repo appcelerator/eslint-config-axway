@@ -26,7 +26,7 @@
 		"styleguide"
 	],
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^2.2.0",
+		"eslint-plugin-chai-expect": "^3.0.0",
 		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^5.1.0",
