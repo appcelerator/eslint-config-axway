@@ -29,7 +29,7 @@
 		"eslint-plugin-chai-expect": "^2.2.0",
 		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-security": "^1.4.0",
 		"find-root": "^1.1.0",
 		"semver": "^7.3.4"
