@@ -26,10 +26,10 @@
 		"styleguide"
 	],
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^2.2.0",
-		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-chai-expect": "^3.0.0",
+		"eslint-plugin-import": "^2.25.4",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-security": "^1.4.0",
 		"find-root": "^1.1.0",
 		"semver": "^7.3.4"
@@ -38,19 +38,19 @@
 		"@babel/core": "7.x",
 		"@babel/eslint-parser": "7.x",
 		"@babel/eslint-plugin": "7.x",
-		"@typescript-eslint/parser": "4.x",
-		"@typescript-eslint/eslint-plugin": "4.x",
+		"@typescript-eslint/parser": "5.x",
+		"@typescript-eslint/eslint-plugin": "5.x",
 		"eslint-plugin-alloy": "1.x",
 		"eslint-plugin-chai-friendly": "0.x",
 		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "8.x || 9.x",
+		"eslint-plugin-mocha": "10.x",
 		"eslint-plugin-react": "7.x"
 	},
 	"peerDependencies": {
-		"eslint": "7.x"
+		"eslint": "8.x"
 	},
 	"devDependencies": {
-		"eslint": "^7.0.0"
+		"eslint": "^8.6.0"
 	},
 	"scripts": {
 		"lint": "eslint .",
