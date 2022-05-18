@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-axway",
-	"version": "7.0.0",
+	"version": "7.0.1",
 	"description": "Shareable eslint config for Axway projects",
 	"main": "./index.js",
 	"author": "Axway, Inc. <npmjs@appcelerator.com>",
@@ -27,12 +27,12 @@
 	],
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^6.0.0",
-		"eslint-plugin-security": "^1.4.0",
+		"eslint-plugin-security": "^1.5.0",
 		"find-root": "^1.1.0",
-		"semver": "^7.3.4"
+		"semver": "^7.3.7"
 	},
 	"optionalPeerDependencies": {
 		"@babel/core": "7.x",
@@ -50,7 +50,7 @@
 		"eslint": "8.x"
 	},
 	"devDependencies": {
-		"eslint": "^8.6.0"
+		"eslint": "^8.15.0"
 	},
 	"scripts": {
 		"lint": "eslint .",
