@@ -27,12 +27,12 @@
 	],
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^6.0.0",
-		"eslint-plugin-security": "^1.5.0",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-security": "^1.7.1",
 		"find-root": "^1.1.0",
-		"semver": "^7.3.7"
+		"semver": "^7.3.8"
 	},
 	"optionalPeerDependencies": {
 		"@babel/core": "7.x",
@@ -50,7 +50,7 @@
 		"eslint": "8.x"
 	},
 	"devDependencies": {
-		"eslint": "^8.15.0"
+		"eslint": "^8.34.0"
 	},
 	"scripts": {
 		"lint": "eslint .",
