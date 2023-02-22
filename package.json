@@ -28,7 +28,7 @@
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^3.0.0",
 		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-n": "^15.6.1",
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-security": "^1.7.1",
 		"find-root": "^1.1.0",
