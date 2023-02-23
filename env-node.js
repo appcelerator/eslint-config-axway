@@ -7,21 +7,21 @@ module.exports = {
 		'ecmaVersion': 2021
 	},
 	'plugins': [
-		'node'
+		'n'
 	],
 	'extends': './index.js',
 	'rules': {
-		'node/no-deprecated-api': 'warn',
-		'node/no-unpublished-bin': 'warn',
-		'node/no-unsupported-features/es-builtins': 'warn',
-		'node/no-unsupported-features/es-syntax': [ 'warn', { ignores: [ 'modules' ] } ],
-		'node/prefer-global/buffer': 'warn',
-		'node/prefer-global/console': 'warn',
-		'node/prefer-global/process': 'warn',
-		'node/prefer-global/text-decoder': 'warn',
-		'node/prefer-global/text-encoder': 'warn',
-		'node/prefer-global/url-search-params': 'warn',
-		'node/prefer-global/url': 'warn',
-		'node/process-exit-as-throw': 'warn'
+		'n/no-deprecated-api': 'warn',
+		'n/no-unpublished-bin': 'warn',
+		'n/no-unsupported-features/es-builtins': 'warn',
+		'n/no-unsupported-features/es-syntax': [ 'warn', { ignores: [ 'modules' ] } ],
+		'n/prefer-global/buffer': 'warn',
+		'n/prefer-global/console': 'warn',
+		'n/prefer-global/process': 'warn',
+		'n/prefer-global/text-decoder': 'warn',
+		'n/prefer-global/text-encoder': 'warn',
+		'n/prefer-global/url-search-params': 'warn',
+		'n/prefer-global/url': 'warn',
+		'n/process-exit-as-throw': 'warn'
 	}
 };
