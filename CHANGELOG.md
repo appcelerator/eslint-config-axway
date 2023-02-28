@@ -1,3 +1,8 @@
+# v8.0.0 (Feb 28, 2023)
+
+ * BREAKING CHANGE: Replaces unmaintained `eslint-plugin-node` with `eslint-plugin-n`. Any uses of `env-node` with `node/` scoped rule overrides will need to be replaced as `n/` scoped.
+ * chore: Updated dependencies.
+
 # v7.0.1 (May 18, 2022)
 
  * fix: Ignore unsupported ES module syntax warnings.
