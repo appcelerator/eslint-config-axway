@@ -24,6 +24,9 @@
 		"linting",
 		"styleguide"
 	],
+	"engines": {
+        "node": ">=v16.19.1"
+    },
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^3.0.0",
 		"eslint-plugin-import": "^2.28.1",
