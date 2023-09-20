@@ -2,5 +2,5 @@
 library 'pipeline-library'
 
 buildNPMPackage {
-	nodeVersion = '18.12.1'
+	nodeVersion = '18.18.0'
 }
