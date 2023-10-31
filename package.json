@@ -11,7 +11,6 @@
 	"repository": "https://github.com/appcelerator/eslint-config-axway",
 	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
 	"keywords": [
-		"appcelerator",
 		"axway",
 		"config",
 		"eslint",
@@ -25,14 +24,20 @@
 		"linting",
 		"styleguide"
 	],
+	"engines": {
+		"node": ">=v18.18.2"
+	},
 	"dependencies": {
 		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-n": "^15.6.1",
+		"eslint-plugin-import": "^2.28.1",
+		"eslint-plugin-n": "^16.1.0",
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-security": "^1.7.1",
 		"find-root": "^1.1.0",
-		"semver": "^7.3.8"
+		"semver": "^7.5.4"
+	},
+	"devDependencies": {
+		"eslint": "^8.49.0"
 	},
 	"optionalPeerDependencies": {
 		"@babel/core": "7.x",
@@ -48,9 +53,6 @@
 	},
 	"peerDependencies": {
 		"eslint": "8.x"
-	},
-	"devDependencies": {
-		"eslint": "^8.35.0"
 	},
 	"scripts": {
 		"lint": "eslint .",
