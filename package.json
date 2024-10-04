@@ -25,34 +25,64 @@
 		"styleguide"
 	],
 	"engines": {
-		"node": ">=v18.18.2"
+		"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
 	},
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-n": "^16.1.0",
-		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-security": "^1.7.1",
+		"eslint-plugin-chai-expect": "^3.1.0",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-n": "^17.10.3",
+		"eslint-plugin-promise": "^7.1.0",
+		"eslint-plugin-security": "^3.0.1",
 		"find-root": "^1.1.0",
-		"semver": "^7.5.4"
+		"semver": "^7.6.3"
 	},
 	"devDependencies": {
-		"eslint": "^8.49.0"
-	},
-	"optionalPeerDependencies": {
-		"@babel/core": "7.x",
-		"@babel/eslint-parser": "7.x",
-		"@babel/eslint-plugin": "7.x",
-		"@typescript-eslint/parser": "5.x",
-		"@typescript-eslint/eslint-plugin": "5.x",
-		"eslint-plugin-alloy": "1.x",
-		"eslint-plugin-chai-friendly": "0.x",
-		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "10.x",
-		"eslint-plugin-react": "7.x"
+		"eslint": "^9.11.1"
 	},
 	"peerDependencies": {
-		"eslint": "8.x"
+		"@babel/core": "^7.25.1",
+		"@babel/eslint-parser": "^7.25.1",
+		"@babel/eslint-plugin": "^7.25.1",
+		"@typescript-eslint/eslint-plugin": "^8.1.0",
+		"@typescript-eslint/parser": "^8.1.0",
+		"eslint": "9.x",
+		"eslint-plugin-alloy": "1.x",
+		"eslint-plugin-chai-friendly": "^0.8.0",
+		"eslint-plugin-jsx-a11y": "^6.10.0",
+		"eslint-plugin-mocha": "10.x",
+		"eslint-plugin-react": "^7.35.0"
+	},
+	"peerDependenciesMeta": {
+		"@babel/core": {
+			"optional": true
+		},
+		"@babel/eslint-parser": {
+			"optional": true
+		},
+		"@babel/eslint-plugin": {
+			"optional": true
+		},
+		"@typescript-eslint/parser": {
+			"optional": true
+		},
+		"@typescript-eslint/eslint-plugin": {
+			"optional": true
+		},
+		"eslint-plugin-alloy": {
+			"optional": true
+		},
+		"eslint-plugin-chai-friendly": {
+			"optional": true
+		},
+		"eslint-plugin-jsx-a11y": {
+			"optional": true
+		},
+		"eslint-plugin-mocha": {
+			"optional": true
+		},
+		"eslint-plugin-react": {
+			"optional": true
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
