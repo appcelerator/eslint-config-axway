@@ -37,7 +37,7 @@
 		"semver": "^7.5.4"
 	},
 	"devDependencies": {
-		"eslint": "^8.49.0"
+		"eslint": "^9.17.0"
 	},
 	"optionalPeerDependencies": {
 		"@babel/core": "7.x",
