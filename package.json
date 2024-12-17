@@ -28,16 +28,16 @@
 		"node": ">=v18.18.2"
 	},
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-n": "^16.1.0",
-		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-chai-expect": "^3.1.0",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-n": "^16.6.2",
+		"eslint-plugin-promise": "^6.6.0",
 		"eslint-plugin-security": "^1.7.1",
 		"find-root": "^1.1.0",
-		"semver": "^7.5.4"
+		"semver": "^7.6.3"
 	},
 	"devDependencies": {
-		"eslint": "^8.49.0"
+		"eslint": "^8.57.1"
 	},
 	"optionalPeerDependencies": {
 		"@babel/core": "7.x",
