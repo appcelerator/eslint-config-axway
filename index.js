@@ -2,13 +2,15 @@ const pluginJs = require('@eslint/js');
 const pluginImport = require('eslint-plugin-import');
 const pluginPromise = require('eslint-plugin-promise');
 const pluginSecurity = require('eslint-plugin-security');
+const pluginStylistic = require('@stylistic/eslint-plugin');
 const { defineConfig } = require('eslint/config');
 
 module.exports = defineConfig([
 	{
 		name: 'axway/recommended',
 		plugins: {
-			js: pluginJs
+			js: pluginJs,
+			'@stylistic': pluginStylistic
 		},
 		extends: [
 			'js/recommended',
@@ -54,7 +56,6 @@ module.exports = defineConfig([
 			'func-style': [ 'error', 'declaration', { allowArrowFunctions: true } ],
 			'generator-star-spacing': 'error',
 			'id-match': 'error',
-			indent: [ 'error', 'tab', { SwitchCase: 1 } ],
 			'jsx-quotes': 'error',
 			'key-spacing': [ 'error', { beforeColon: false, mode: 'minimum' } ],
 			'keyword-spacing': [ 'error', { overrides: {} } ],
@@ -206,7 +207,12 @@ module.exports = defineConfig([
 			'promise/no-return-in-finally': 'warn',
 			'promise/no-return-wrap': 'error',
 			'promise/param-names': 'error',
-			'promise/valid-params': 'warn'
+			'promise/valid-params': 'warn',
+
+			// @stylistic rules
+			'@stylistic/no-mixed-spaces-and-tabs': 'warn',
+			'@stylistic/indent': [ 'error', 'tab', { SwitchCase: 1 } ],
+			'@stylistic/semi': [ 'error', 'always' ],
 		}
 	}
 ]);
