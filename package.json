@@ -28,28 +28,28 @@
 		"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
 	},
 	"dependencies": {
-		"@eslint/js": "^9.34.0",
-		"@stylistic/eslint-plugin": "^5.4.0",
+		"@eslint/js": "^9.39.2",
+		"@stylistic/eslint-plugin": "^5.6.1",
 		"eslint-plugin-import": "^2.32.0",
-		"eslint-plugin-n": "^17.21.3",
+		"eslint-plugin-n": "^17.23.1",
 		"eslint-plugin-promise": "^7.2.1",
 		"eslint-plugin-security": "^3.0.1",
 		"find-root": "^1.1.0",
-		"globals": "^16.3.0",
-		"semver": "^7.7.2"
+		"globals": "^16.5.0",
+		"semver": "^7.7.3"
 	},
 	"devDependencies": {
-		"eslint": "^9.34.0"
+		"eslint": "^9.39.2"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.41.0",
-		"eslint": "^9.34.0",
+		"@typescript-eslint/eslint-plugin": "^8.50.0",
+		"eslint": "^9.39.2",
 		"eslint-plugin-chai-expect": "^3.1.0",
 		"eslint-plugin-chai-friendly": "^1.1.0",
-		"eslint-plugin-jsx-a11y": "^6.10.0",
-		"eslint-plugin-mocha": "^11.1.0",
-		"eslint-plugin-react": "^7.37.0",
-		"eslint-plugin-vue": "^10.4.0"
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-mocha": "^11.2.0",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-vue": "^10.6.2"
 	},
 	"peerDependenciesMeta": {
 		"@typescript-eslint/parser": {

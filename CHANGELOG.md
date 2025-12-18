@@ -1,5 +1,14 @@
 # Changlog
 
+## v10.0.0 (Dec 18, 2025)
+
+* BREAKING CHANGE: Drops support for eslint 8.
+* BREAKING CHANGE: Removes `+babel` extension.
+* BREAKING CHANGE: Removes support for `env-alloy` and `env-titanium` environments.
+* feat: Adds support for eslint 9.
+* feat: Adds `+vue` extension.
+* chore: Updated dependencies.
+
 ## v9.0.0 (Oct 31, 2023)
 
 * BREAKING CHANGE: Add minimum Node.JS version of 18.18.2
