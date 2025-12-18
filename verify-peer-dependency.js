@@ -3,6 +3,12 @@ const packageJSON = require('./package.json');
 const path = require('path');
 const semver = require('semver');
 
+/**
+ * Handles any errors that occur while running `verifyPeerDependency`
+ * @param {string} err - Error message to log
+ * @param {boolean} shouldThrow - if true, the function will throw rather than exiting the process
+ * @returns {void}
+ */
 function error(err, shouldThrow) {
 	if (shouldThrow) {
 		throw new Error(err);
@@ -19,11 +25,11 @@ function error(err, shouldThrow) {
  * @returns {void}
  */
 module.exports = function verifyPeerDependency(dependency, shouldThrow) {
-	const { name, optionalPeerDependencies } = packageJSON;
+	const { name, peerDependencies } = packageJSON;
 
-	const range = optionalPeerDependencies[dependency];
+	const range = peerDependencies[dependency];
 	if (!range) {
-		return error(`${name} does not specify ${dependency} as an optionalPeerDependency.`, shouldThrow);
+		return error(`${name} does not specify ${dependency} as a peerDependencies.`, shouldThrow);
 	}
 
 	// Try to verify that the dependency is installed.
@@ -44,7 +50,7 @@ module.exports = function verifyPeerDependency(dependency, shouldThrow) {
 		}
 
 		dependencyPath = require.resolve(dependency, { paths: paths });
-	} catch (e) {
+	} catch (_err) {
 		return error(`${name} requires a peer of ${dependency}@${range} but none was installed.`, shouldThrow);
 	}
 

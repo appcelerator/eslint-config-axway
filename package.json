@@ -25,34 +25,57 @@
 		"styleguide"
 	],
 	"engines": {
-		"node": ">=v18.18.2"
+		"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
 	},
 	"dependencies": {
-		"eslint-plugin-chai-expect": "^3.0.0",
-		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-n": "^16.1.0",
-		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-security": "^1.7.1",
+		"@eslint/js": "^9.39.2",
+		"@stylistic/eslint-plugin": "^5.6.1",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-n": "^17.23.1",
+		"eslint-plugin-promise": "^7.2.1",
+		"eslint-plugin-security": "^3.0.1",
 		"find-root": "^1.1.0",
-		"semver": "^7.5.4"
+		"globals": "^16.5.0",
+		"semver": "^7.7.3"
 	},
 	"devDependencies": {
-		"eslint": "^8.49.0"
-	},
-	"optionalPeerDependencies": {
-		"@babel/core": "7.x",
-		"@babel/eslint-parser": "7.x",
-		"@babel/eslint-plugin": "7.x",
-		"@typescript-eslint/parser": "5.x",
-		"@typescript-eslint/eslint-plugin": "5.x",
-		"eslint-plugin-alloy": "1.x",
-		"eslint-plugin-chai-friendly": "0.x",
-		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-mocha": "10.x",
-		"eslint-plugin-react": "7.x"
+		"eslint": "^9.39.2"
 	},
 	"peerDependencies": {
-		"eslint": "8.x"
+		"@typescript-eslint/eslint-plugin": "^8.50.0",
+		"eslint": "^9.39.2",
+		"eslint-plugin-chai-expect": "^3.1.0",
+		"eslint-plugin-chai-friendly": "^1.1.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-mocha": "^11.2.0",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-vue": "^10.6.2"
+	},
+	"peerDependenciesMeta": {
+		"@typescript-eslint/parser": {
+			"optional": true
+		},
+		"@typescript-eslint/eslint-plugin": {
+			"optional": true
+		},
+		"eslint-plugin-chai-expect": {
+			"optional": true
+		},
+		"eslint-plugin-chai-friendly": {
+			"optional": true
+		},
+		"eslint-plugin-jsx-a11y": {
+			"optional": true
+		},
+		"eslint-plugin-mocha": {
+			"optional": true
+		},
+		"eslint-plugin-react": {
+			"optional": true
+		},
+		"eslint-plugin-vue": {
+			"optional": true
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
