@@ -8,7 +8,10 @@
 		"Chris Barber <cbarber@axway.com>"
 	],
 	"license": "Apache-2.0",
-	"repository": "https://github.com/appcelerator/eslint-config-axway",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/appcelerator/eslint-config-axway.git"
+	},
 	"homepage": "https://github.com/appcelerator/eslint-config-axway#readme",
 	"keywords": [
 		"axway",
